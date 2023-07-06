@@ -21,6 +21,10 @@
   top: 0;
   margin-right: 15vw;
   }
+
+  #myTopnav{
+    margin-top: 2vh;
+  }
   
   .topnav {
     background-color: none;
