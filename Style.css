@@ -26,7 +26,7 @@
     background-color: none;
     display: flex;
     justify-content: right;
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
     
     }
     
@@ -123,13 +123,15 @@
     margin-top: 5vh;
     margin-bottom: 50px;
     background: transparent;
+    /* margin-left: 5vw;
+    margin-right: 5vw; */
     }
 
    
 
     
     #myVideo {
-    position: relative;
+    position: absolute;
     /* top: 0;
     left: 0; */
     min-width: 100%;
@@ -177,17 +179,31 @@
 
   }
 
-   /* .real-estate-expert{
+   .real-estate-expert{
     display: flex;
     flex-direction: column;
-    
-   } */
+    margin: 20px 10px 0px 10px;
+   }
+
+  
 
    .real-estate-expert p{
     align-content: center;
 		text-align: justify;
-		margin-top: 20px;
+		
     font-size: 15px;
+    margin: 20px 10px 0px 10px;
+   }
+
+
+   .real-estate-agent{
+    margin: 20px 10px 0px 10px;
+   }
+
+
+   .home-buyer-service{
+    margin: 0 10px;
+
    }
 
    .home-buyer-service h1{
@@ -220,11 +236,11 @@
     float: right;
     margin: 1vw 1vw 1vw 1vw;
     border-radius: 10px; 
-    margin-top: 50px;
+    
     overflow: hidden;
     
   }
-
+ 
   .index-title h2{
     margin-top: 50px;
   }
@@ -238,12 +254,9 @@
     
     .index-title img{
       float:none;
-      justify-content: center;
-      align-items: center;
-      margin: 1vw 1vw 1vw 15vw;
-      border-radius: 10px; 
-      
+      margin-left: 20vw;
     }
+
     .index-title h2{
       margin-top: 10px;
       text-align: center;
@@ -258,6 +271,12 @@
     .index-title p{
       text-align: justify;
     }
+
+    .agent{
+      margin-left: 20vw;
+    
+    }
+  
 
   }
  
@@ -337,7 +356,7 @@
 
   .testimonial-card{
     margin-top: 5vh;
-    margin-left: 5vw;
+    margin-left: 10vw;
   }
 
 
@@ -346,22 +365,6 @@
 
 
 
-.footer ul{
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-
-}
-
-footer p{
-  font-size: 15px;
-  text-align: center;
-  text-decoration: none !important;
-  margin-bottom: 20px;
-   
-}
 
 
 .about{
@@ -810,15 +813,8 @@ hr{
   bottom: 8px;
   left: 16px;
 }
-.footer{
-  display: flex;
-	list-style-type: none;
-	justify-content: center;
-	gap: 20px;
-	margin-bottom: 20px;
-	align-items: center;
-  font-size: large;
-}
+
+
 
 
 .list{
@@ -857,3 +853,41 @@ div h3 a{
   color: #1703f6;
 }
 
+
+.footer{
+  
+	list-style-type: none;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 20px;
+	align-items: center;
+  font-size: large;
+}
+
+.footer ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+
+}
+
+footer p{
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 20px;
+   
+}
+
+
+@media screen and (max-width: 600px) {
+
+  footer p{
+
+    
+    margin-left: 10vw;
+  }
+  
+}
