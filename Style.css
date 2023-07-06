@@ -582,11 +582,21 @@ hr{
   .property-listings{
     font-size: 30px; 
     margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* margin-left: 5vw; */
+  }
+
+  @media screen and (max-width: 600px) {
+    .property-listings-title{
+      margin-top: 10vh;
+    }
+    
   }
 
   .property1{
     margin-top: 30px;
-  font-size: 20px;
+    font-size: 20px;
   }
 
   .property1 p{
@@ -602,6 +612,7 @@ hr{
   gap: 50px;
 
 }
+
 
 
   .property2{
@@ -645,7 +656,7 @@ hr{
 
   table {
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
     
   }
 
@@ -671,6 +682,31 @@ hr{
   td:first-child {
     font-weight: bold;
   }
+
+ /* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+
+
+  .property1-img ,.property2-img,.property3-img{
+    display: flex;
+    flex-direction: column; /* Change to vertical layout */
+    align-items: flex-start; /* Align items to the start of the container */
+    margin-top: 5vh;
+    overflow: hidden;
+    
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%; /* Take full width of the container */
+    margin-top: 20px; /* Add some spacing */
+  }
+
+
+ 
+}
+
+
   
 
   .E-book-title, .property-title , .gallery-title{
@@ -745,6 +781,18 @@ hr{
     max-height: 90%;
   }
 
+
+
+  /* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .gallery{
+    margin-left: 5vw;
+
+  }
+  .img-wrapper {
+    width: 100%; /* Change to full width on smaller screens */
+  }
+}
   
   .close-btn {
     position: absolute;
@@ -770,6 +818,14 @@ hr{
   
   .button:hover {
     background-color: #152c30;
+  }
+
+  @media screen and (max-width : 600px) {
+
+    .button{
+      margin-left: 25vw;
+    }
+    
   }
 
 
@@ -800,14 +856,45 @@ hr{
   }
   
 
-.property-listings{
+/* .property-listings{
   margin-top: 3vw;
   text-align: justify;
-}
+} */
 .home1{
-  margin-top: 3vw;
-  background-image: url();
+  
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
+
+
+.property1-table{
+  margin-top: 10vh;
+  /* margin-left: 20vw; */
+  
+  
+
+}
+
+@media screen and (max-width : 600px) {
+
+  .home1{
+    height: 50vh !important;
+  }
+
+  .property1-table{
+    overflow: hidden;
+    margin-right: 10vw;
+  }
+  
+}
+
+
+.property1-content{
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
 .bottom-left {
   position: absolute;
   bottom: 8px;
