@@ -368,25 +368,23 @@
 
 
 .about{
-  font-size: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
+  font-size: 18px;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .about-us{
-  margin-top: 100px;
+  margin-top: 10vh;
 }
 
 .about-us p{
-  margin-top: 10px;
+  margin-top: 5vh;
 }
 
 .about h1{
   text-align: center;
   font-weight: 600;
-  font-size: 40px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  font-size: 40px;  
 
 }
 
@@ -399,8 +397,7 @@
 
 }
 .our-goal p{
-  margin-top: 20px;
-  margin-bottom: 20px;
+ margin: 3vh ;
 
 }
 
@@ -416,31 +413,70 @@
   
   margin-left: 50px ;
   margin-right: 50px;
+  
+}
+
+.our-roles li{
+  margin-top: 2vh;
 }
 
 
 .our-goal img{
-  padding-left: 250px;
+  margin-left: 10vw;
+  width: 80%;
+  height: 500px;
 
 
 }
-#map {
+
+
+@media screen and (max-width: 600px) {
+
+  .our-goal img{
+    
+    height: 25vh;
+  }
+  
+}
+
+/* #map {
   height: 400px;
   width: 100%;
-}
+} */
 
 .map{
   margin-top: 10px;
   margin-bottom: 10px;
+  
 }
 
-.map img{
-  height: 400px;
-  width: 50%;
-  justify-content: center;
-  margin-left: 300px;
-  margin-top: 20px;
+.map h1{
+  text-align: center;
+  margin-top: 5vh;
+  
+}
 
+.map p{
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.map iframe{
+
+  
+  margin-top: 10vh;
+  width: 50%;
+	height: 60vh;
+  margin-left: 25vw;
+}
+
+@media screen and (max-width : 600px) {
+  .map iframe{
+    width: 90%;
+    height: 30vh;
+    margin: 5vw
+  }
+  
 }
 
 hr{
@@ -458,10 +494,8 @@ hr{
     background-color: #fff;
     padding: 50px;
     margin: 20px auto;
-
-    border: 4px solid #a514aa;
     border-radius: 50px;
-    box-shadow: 0 0 15px #1703f6;
+    
     text-align: left;
 
   }
@@ -574,6 +608,17 @@ hr{
 .agent-website-sitemap h2{
   margin-top: 40px;
 
+}
+
+@media screen and (max-width : 600px) {
+
+.main-form{
+  margin-top: 10vw ;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+}
+  
 }
 
 
