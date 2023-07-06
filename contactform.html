@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Drishya Properties Team</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index-termproject.html"> Drishya Properties Team </a>
+			</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="index-termproject.html">Home</a>
+				</li>
+				<li>
+					<a href="properties.html">Properties</a>
+				</li>
+
+				<li><a href="Aboutus.html">About us </a></li>
+				<li><a href="credits.html">Credits</a></li>
+				<li>
+					<a href="contactform.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="main-form">
+			<form>
+				<div class="content-form">
+					<div>
+						<label for="FName">First Name : </label>
+						<input
+							type="text"
+							name="FName"
+							id="FName"
+							placeholder="eg : First Name" />
+					</div>
+					<div>
+						<label for="LName">Last Name : </label>
+						<input
+							type="text"
+							name="LName"
+							id="LName"
+							placeholder="eg : Last Name" />
+					</div>
+
+					<div>
+						<label for="Emails">Email Address : </label>
+						<input
+							type="email"
+							name="emails"
+							id="emails"
+							placeholder="eg : name@emai.com" />
+					</div>
+					<div>
+						<label for="Phone">Contact number : </label>
+						<input
+							type="tel"
+							name="Phone"
+							id="Phone"
+							placeholder="eg : XXX-XXX-XXXX" />
+					</div>
+					<div>
+						<label for="country">Country: </label>
+
+						<select name="country" id="country">
+							<option></option>
+							<option value="USA">USA</option>
+							<option value="England">England</option>
+							<option value="Canada">Canada</option>
+							<option value="Iran">Iran</option>
+							<option value="Iraq">Iraq</option>
+							<option value="Iraq">India</option>
+							<option value="Iraq">Nepal</option>
+						</select>
+					</div>
+					<div>
+						<label for="today">Today's date: </label>
+						<input type="date" name="today" id="today" />
+					</div>
+
+					<div>
+						<label for="propertyType">Property Type:</label>
+						<select id="propertyType" name="propertyType">
+							<option value="house">House</option>
+							<option value="condo">Condominium</option>
+						</select>
+					</div>
+
+					<div>
+						<label for="bedrooms">Number of Bedrooms:</label>
+						<input
+							type="number"
+							id="bedrooms"
+							name="bedrooms"
+							placeholder="eg : 2"
+							min="1"
+							max="10"
+							required />
+					</div>
+
+					<div>
+						<label for="bathrooms">Number of Bathrooms:</label>
+						<input
+							type="number"
+							id="bathrooms"
+							name="bathrooms"
+							placeholder="eg : 2"
+							min="1"
+							max="10"
+							required />
+					</div>
+
+					<div>
+						<label for="priceRange">Price Range:</label>
+						<input
+							type="number"
+							id="priceRange"
+							name="priceRange"
+							placeholder="eg : 200000"
+							min="100000"
+							max="5000000"
+							required />
+					</div>
+
+					<div>
+						<label for="comments">Any additional comments:</label>
+
+						<textarea
+							type="text"
+							name="comments"
+							id="comments"
+							cols="40"
+							rows="3"></textarea>
+					</div>
+				</div>
+
+				<input type="Submit" value="Submit" />
+				<input type="reset" value="Clear Form" />
+			</form>
+		</div>
+
+		<hr />
+
+		<footer>
+			<div>
+				<ul
+					style="
+						display: flex;
+						list-style-type: none;
+						justify-content: center;
+						gap: 20px;
+						margin-bottom: 20px;
+						align-items: center;
+					">
+					<li>
+						<a
+							href="mailto:sagaragrahari106@gmail.com"
+							target="_blank">
+							<img
+								src="images/gmail-svgrepo-com.svg"
+								alt="gmail"
+								width="40px"
+								height="50px" />
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://www.linkedin.com/in/sagar-agrahari-355539253/"
+							target="_blank">
+							<img
+								src="images/linkedin-color-svgrepo-com.svg"
+								alt="linkedin"
+								width="40px"
+								height="30px" />
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://www.facebook.com/sagar.agrahari.3975?mibextid=ZbWKwL"
+							target="_blank">
+							<img
+								src="images/facebook-color-svgrepo-com.svg"
+								alt="facebook"
+								width="40px"
+								height="30px" />
+						</a>
+					</li>
+
+					<li>
+						<a
+							href="https://www.instagram.com/sagar_agrahari_106/?igshid=ZDdkNTZiNTM%3D"
+							target="_blank">
+							<img
+								src="images/instagram-1-svgrepo-com.svg"
+								alt="instagram"
+								width="40px"
+								height="30px" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p
+				style="
+					font-size: 15px;
+					text-align: center;
+					text-decoration: none !important;
+				">
+				Copyright <span>&copy; Drishya Properties Team </span>
+			</p>
+		</footer>
+	</body>
+</html>

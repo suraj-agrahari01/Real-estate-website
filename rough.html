@@ -1,0 +1,78 @@
+<!-- here I have tried to do task number 4 : 
+Contact Form - An HTML page containing a form that can be completed by the 
+visitor with his own preferences for the type of property he is interested in. The 
+form should contain fields for the visitor’s first name, last name, phone, email, 
+type of property (house or condominium), number of bedrooms, number of 
+bathrooms, price range, and an additional comments text area. The information 
+on the form is submitted by email to the agents’ email address (1 page). -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			form {
+				display: flex;
+				flex-direction: column;
+				width: 60%;
+				margin: auto;
+			}
+
+			form input,
+			form textarea,
+			form button {
+				padding: 20px;
+				margin-bottom: 20px;
+				outline: none;
+				border: none;
+				background-color: #ddd;
+			}
+			form button {
+				background-color: #333;
+				cursor: pointer;
+				color: #fff;
+			}
+			h1 {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>contact us...</h1>
+		<form class="contact-form" action="#">
+			<input class="name" type="text" placeholder="Name" />
+			<input class="email" type="email" placeholder="email" />
+			<textarea
+				class="msg"
+				cols="5"
+				rows="5"
+				placeholder="Message"></textarea>
+			<button type="submit">Submit</button>
+		</form>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script>
+			const form = document.querySelector('.contact-form');
+			function sendMsg(e) {
+				e.preventDefault();
+
+				const name = document.querySelector('.name');
+				email = document.querySelector('.email');
+				msg = document.querySelector('.msg');
+
+				Email.send({
+					SecureToken: 'f621234a-5ea3-472e-ba4c-79f22d74e231',
+					To: 'sagaragrahari106@gmail.com',
+					From: email.value,
+					Subject: 'Contact form',
+					Body: msg.value,
+				}).then((message) => alert(message));
+			}
+
+			form.addEventListener('submit', sendMsg);
+		</script>
+	</body>
+</html>
+-->
