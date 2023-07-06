@@ -5,31 +5,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Drishya Properties Team</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
 	</head>
 	<body>
 		<header>
 			<h1>
-				<a href="index.html">Drishya Properties Team</a>
+				<a href="index.html">Nepali Enginner Real-estate</a>
 			</h1>
 		</header>
 
-		<nav>
-			<ul>
-				<li>
-					<a href="index.html">Home</a>
-				</li>
-				<li>
-					<a href="properties.html">Properties</a>
-				</li>
+		<div class="topnav" id="myTopnav">
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="properties.html">Properties</a>
+					</li>
 
-				<li><a href="Aboutus.html">About us </a></li>
-				<li><a href="credits.html">Credits</a></li>
-				<li>
-					<a href="contactform.html">Contact Us</a>
-				</li>
-			</ul>
-		</nav>
+					<li><a href="Aboutus.html">About us </a></li>
+					<li><a href="credits.html">Credits</a></li>
+					<li>
+						<a href="contactform.html">Contact Us</a>
+					</li>
+					<li>
+						<a
+							href="javascript:void(0);"
+							class="icon"
+							onclick="myFunction()">
+							<i class="fa fas fa-bars"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 
 		<div class="banner">
 			<video
@@ -38,11 +51,12 @@
 				loop
 				id="myVideo"
 				width="700px"
-				height="700px">
+				height="500px">
 				<source src="images/Untitled.mov" type="video/mp4" />
 			</video>
+
 			<div class="banner-text">
-				<h2>Welcome to Drishya Properties Team</h2>
+				<h2>Welcome to Nepali Engineer Real-estate</h2>
 				<p>
 					We are here to help you find your dream home <br />click
 					<a href="properties.html">here</a> to see properties
@@ -52,18 +66,18 @@
 		</div>
 
 		<div class="index-title">
-			<h1>About Me</h1>
+			<h1>About Agent</h1>
 			<img
 				src="images/photo.jpg"
 				alt="Sagar Agrahari Photo"
 				weight="400px"
 				height="300px"
-				class="agent"
-				style="border-radius: 10px; margin-top: 50px" />
+				class="agent" />
 
-			<h2 style="margin-top: 50px">Sagar Agrahari</h2>
+			<h2>Suraj Agrahari</h2>
 
-			<p><b>Your Ontario Real Estate Expert</b></p>
+			<h3><b>Your Ontario Real Estate Expert</b></h3>
+
 			<div class="real-estate-expert">
 				<p>
 					With years of real estate service under my belt, I can
@@ -77,6 +91,7 @@
 					with you!
 				</p>
 			</div>
+
 			<br />
 			<div class="real-estate-agent">
 				<h3>Your Personal Real Estate Agent</h3>
@@ -239,7 +254,7 @@
 				Testimonials
 			</h1>
 
-			<section id="testimonials">
+			<section id="testimonials" class="Testimonials">
 				<div class="testimonial-card">
 					<div class="testimonial-header">
 						<img src="images/person1.jpeg" alt="Client 1" />
@@ -361,5 +376,15 @@
 				<p>Copyright <span>&copy; Drishya Properties Team </span></p>
 			</footer>
 		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById('myTopnav');
+				if (x.className === 'topnav') {
+					x.className += ' responsive';
+				} else {
+					x.className = 'topnav';
+				}
+			}
+		</script>
 	</body>
 </html>
